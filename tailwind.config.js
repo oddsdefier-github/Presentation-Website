@@ -10,8 +10,12 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: "'Inter', sans-serif",
-      }
+      },
+      colors: {
+        box1: '#47b0ff',
+      },
     },
+
     
   },
   plugins: [],
