@@ -13,6 +13,11 @@
 </head>
 <body class="font-inter bg-gray-50">
 
+    <div class="absolute grid h-screen w-screen bg-slate-500 opacity-30 place-items-center justify-center" id="f-screen">
+        <button onclick="openFullscreen();">Open Fullscreen</button>
+        <button onclick="closeBtn(); closeFullScreen()">Close Fullscreen</button>
+    </div>
+    
     <!-- body-container-start -->
     <div class="container flex flex-col w-screen mx-10">
 
@@ -72,7 +77,7 @@
             <!-- card3-end -->
         </div>
         <!-- card-container-end -->
-
+        
         <!-- alerts-start -->
         <div class="absolute bottom-2 right-3 w-auto items-center rounded-lg bg-green-100 border-t-2 border-green-300 py-5 px-6 text-base data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
             <strong class="mr-2">Tip! </strong> <p>You can also click the image to learn more.</p> 
