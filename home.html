@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="js/script.js"></script>
+    <style>
+        .card-container {
+            filter: blur(3px);
+            filter: grayscale(100%);
+            pointer-events: none;
+        }
+    </style>
 </head>
-<style>
-    .card-container {
-        filter: blur(3px);
-        pointer-events: none;
-    }
-</style>
 <body class="font-inter bg-gray-100">
 
 
@@ -35,8 +36,8 @@
         <div class="relative rounded w-full h-fit">
 
             <!-- alerts-start -->
-            <div class="absolute z-50 text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-cardText2 py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
-                <strong class="mr-2 font-semibold">Tip: </strong> <p>You can also click the image to know more.</p> 
+            <div class="animate-bounce absolute z-50 text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-cardText2 py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
+                <strong class="mr-2 font-semibold">Tip: </strong> <p>You can click the image to know more.</p> 
                 <button type="button"  onclick="hideAlert(); removeBlur()" class="ml-5 box-content rounded-none border-none p-1 opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-alert-dismiss aria-label="Close">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
