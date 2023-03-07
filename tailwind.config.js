@@ -23,6 +23,9 @@ module.exports = {
         btnHover3: '#F9A998',
         
       },
+      height: {
+        '128': '32rem',
+      },
     },
 
     
