@@ -3,13 +3,12 @@ var hide = document.getElementById("alert");
 hide.style.display = "none";
 
 
-const alertTimeout = setTimeout(tipAlert, 4000);    
+const alertTimeout = setTimeout(tipAlert, 1000);    
 function tipAlert() {
     var show = document.getElementById("alert")
     show.style.display = "flex";
-
-
 }
+
 
 
 function hideAlert() {
@@ -21,4 +20,8 @@ function hideAlert() {
     }
     }
 
+function removeBlur() {
+    var removeBlur = document.getElementById("blur");
+    removeBlur.classList.remove("card-container");
+}
     

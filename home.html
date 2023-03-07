@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="js/script.js"></script>
 </head>
+<style>
+    .card-container {
+        filter: blur(3px);
+        pointer-events: none;
+    }
+</style>
 <body class="font-inter bg-gray-100">
 
 
@@ -20,7 +26,7 @@
 
         <!-- header-start -->
         <div class=" flex flex-col mt-5 p-3">
-            <h1 class="text-2xl font-bold text-blue-700 select-none">Favorite Anime</h1>
+            <h1 class="text-2xl font-bold text-border1 select-none">Favorite Anime</h1>
             <p class="text-md text-gray-500 mt-1 mb-2 select-none">Discover my favorite Anime shows of all time.</p>
             <hr>
         </div>
@@ -29,9 +35,9 @@
         <div class="relative rounded w-full h-fit">
 
             <!-- alerts-start -->
-            <div class="absolute z-50 text-sm text-white select-none w-auto shadow items-center rounded-lg bg-cardText2 py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
+            <div class="absolute z-50 text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-cardText2 py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
                 <strong class="mr-2 font-semibold">Tip: </strong> <p>You can also click the image to know more.</p> 
-                <button type="button"  onclick="hideAlert()" class="ml-5 box-content rounded-none border-none p-1 opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-alert-dismiss aria-label="Close">
+                <button type="button"  onclick="hideAlert(); removeBlur()" class="ml-5 box-content rounded-none border-none p-1 opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-alert-dismiss aria-label="Close">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
                             <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
@@ -42,7 +48,7 @@
             <!-- alerts-end-->
 
             <!-- card-container-start -->
-            <div class="py-5 flex flex-row gap-10 justify-center">
+            <div class="card-container py-5 flex flex-row gap-10 justify-center" id="blur">
                 <!-- card1-start -->
                 <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border1 bg-gray-200 shadow">
                     <a href="./files/page1.html" target="_blank">
