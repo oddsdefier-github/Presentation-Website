@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mob Psycho 100</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
     <link rel="icon" type="image/x-icon" href="../icons/anime-favicon.png">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script defer src="js/script.js"></script>
 </head>
-<body>
-    <div class="container mx-32 font-inter"> 
-        <div class="my-5">
+<body class="font-inter bg-gray-700 text-white">
+
+
+    <section class="container mx-32 font-inter"> 
+        <!-- header-start -->
+        <header class="my-5">
             <h1 class="font-bold text-3xl py-3">Mob Psycho 100</h1>
             <hr>
-        </div>
+        </header>
+        <!-- header-end -->
 
-        <div class="my-7">
+        <div class="content my-7">
             <ul class="list-disc mx-5">
                 <li class="my-3">
                     Eighth-grader Shigeo "Mob" Kageyama has tapped into his inner wellspring of psychic prowess at a young age. But the power quickly proves to be a liability when he realizes the potential danger in his skills. Choosing to suppress his power, Mob's only present use for his ability is to impress his longtime crush, Tsubomi, who soon grows bored of the same tricks.
@@ -27,12 +33,28 @@
                 </li>
             </ul>
         </div>
+
         <div class="w-24 ml-5 flex flex-row">
             <img src="../icons/arrow-bar-left.svg" alt="arrow-bar-left"> 
             <a href="../home.html" onclick="window.close()" class="text-sm text-indigo-500 hover:text-indigo-800">Back</a>
         </div>
 
-    </div>
+    </section>
+    
 
+
+    <!-- bg-effect -->
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
+            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+            <defs>
+                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9089FC" />
+                <stop offset="1" stop-color="#FF80B5" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    <!-- bg-effect -->
 </body>
 </html>

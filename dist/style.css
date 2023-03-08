@@ -1,5 +1,54 @@
 .card-container {
-    filter: blur(3px);
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(2px);
     pointer-events: none;
 }
+
+#alert {
+    animation: entrance 0.5s ease-out 0s 1 normal forwards, onGoing 1.5s ease-in 1.5s 3 normal forwards;
+}
+@keyframes entrance {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes onGoing {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(1deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-2deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(2deg);
+	}
+
+	80% {
+		transform: rotate(-1deg);
+	}
+
+	90% {
+		transform: rotate(1deg);
+	}
+}
+
+
+
+

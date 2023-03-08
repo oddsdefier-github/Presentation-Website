@@ -18,18 +18,18 @@
     <section class="container flex flex-col w-screen mx-10">
 
             <!-- header-start -->
-            <div class="border-b border-gray-600 flex flex-col mt-5">
+            <header class="border-b border-gray-600 flex flex-col mt-5">
                 <h1 class="text-2xl font-bold text-white select-none">Favorite Anime</h1>
                 <p class="text-md text-gray-300 mt-1 mb-2 select-none">Discover my favorite Anime shows of all time.</p>
                 <hr id="hr">
-            </div>
+            </header>
             <!-- header-end -->
 
             <!-- container-wrapper-start-->
             <div class="relative rounded w-full h-fit">
 
                 <!-- floating-alert-start -->
-                <div class="animate-bounce absolute z-50 text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-cardText2 py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
+                <div class="exit absolute z-50 text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-btnPurple py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
                     <strong class="mr-2 font-semibold">Tip: </strong> <p>You can click the image to know more.</p> 
                     <button type="button"  onclick="hideAlert(); removeBlur()" class="ml-5 box-content rounded-none border-none p-1 opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-alert-dismiss aria-label="Close">
                         <span>
@@ -42,7 +42,7 @@
                 <!-- floating-alert-end-->
 
                 <!-- card-container-start -->
-                <div class="card-container py-7 flex flex-row gap-10 justify-center" id="blur">
+                <div class="card-container py-7 flex flex-row gap-10 justify-center" id="grayscale">
 
                     <!-- card1-start -->
                     <div class="relative w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-mpGreen bg-mpGreen shadow-md">
@@ -121,13 +121,13 @@
     <!-- bg-effect -->
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
-        <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-        <defs>
-            <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#9089FC" />
-            <stop offset="1" stop-color="#FF80B5" />
-            </linearGradient>
-        </defs>
+            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+            <defs>
+                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9089FC" />
+                <stop offset="1" stop-color="#FF80B5" />
+                </linearGradient>
+            </defs>
         </svg>
     </div>
     <!-- bg-effect -->
