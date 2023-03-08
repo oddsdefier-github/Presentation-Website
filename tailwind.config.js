@@ -26,6 +26,9 @@ module.exports = {
         csmOrange: '#ff6f00',
         btnPurple: '#4B4399',
       },
+      backgroundImage: {
+        'mob-bg': "url('./images/mob-bg.jpg')",
+      },
     },
 
     

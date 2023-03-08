@@ -1,3 +1,7 @@
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+
 const grayscale = document.getElementById("grayscale");
 grayscale.classList.remove("card-container");
 
