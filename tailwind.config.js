@@ -21,9 +21,8 @@ module.exports = {
         btnHover1: '#7B77A5',
         btnHover2: '#FDC453',
         btnHover3: '#F9A998',
-      },
-      height: {
-        '128': '32rem',
+        bgPage: '#202125',
+        customGreen: '#cae962'
       },
     },
 

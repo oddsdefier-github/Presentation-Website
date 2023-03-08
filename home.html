@@ -16,9 +16,12 @@
             filter: grayscale(100%);
             pointer-events: none;
         }
+        hr {
+
+        }
     </style>
 </head>
-<body class="font-inter bg-gray-100">
+<body class="font-inter bg-zinc-200">
 
 
     
@@ -26,10 +29,10 @@
     <div class="container flex flex-col w-screen mx-10">
 
         <!-- header-start -->
-        <div class=" flex flex-col mt-5 p-3">
+        <div class="border-b-2 border-gray-300 flex flex-col mt-5">
             <h1 class="text-2xl font-bold text-border1 select-none">Favorite Anime</h1>
             <p class="text-md text-gray-500 mt-1 mb-2 select-none">Discover my favorite Anime shows of all time.</p>
-            <hr>
+            <hr id="hr">
         </div>
         <!-- header-end -->
         <!-- container-wrapper-start-->
@@ -51,14 +54,20 @@
             <!-- card-container-start -->
             <div class="card-container py-5 flex flex-row gap-10 justify-center" id="blur">
                 <!-- card1-start -->
-                <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border1 bg-gray-200 shadow">
-                    <a href="./files/page1.html" target="_blank">
-                        <img src="./images/mob.jpg" class="rounded-t-lg w-80 h-72"  alt="Mob Psycho 100"> 
-                    </a>
+                <div class="relative w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border1 bg-customGreen shadow-md">
+                    <div id="imageHover1">
+                        <a href="./files/page1.html" target="_blank">
+                            <div class="hidden absolute w-80 h-72 bg-gray-600 rounded-t-lg opacity-30" id="overlay1"></div>
+                            <img src="./images/mob.jpg" class="rounded-t-lg w-80 h-72"  alt="Mob Psycho 100"> 
+                        </a>
+                        <div id="link1" class="hidden absolute top-3 right-5 mt-auto border border-white px-3 text-white">
+                            <button>Watch</button>
+                        </div>
+                    </div>
                     <div class="p-5">
                             <h5 class="mb-2 text-xl text-cardText1 font-bold tracking-tight select-none">Mob Psycho 100</h5>
                             <p class="mb-3 text-sm font-normal text-gray-600 select-none">Mob Psycho 100 (Japanese: モブサイコ100, Hepburn: Mobu Saiko Hyaku) is a Japanese web manga series written and illustrated by One.</p>
-                            <a href="./files/page1.html" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-border1 rounded-lg hover:bg-btnHover1 focus:ring-4 focus:outline-none focus:ring-blue-300" >
+                            <a href="./files/page1.html" target="_blank" class="select-none inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-border1 rounded-lg hover:bg-btnHover1 focus:ring-4 focus:outline-none focus:ring-blue-300" >
                                 Read more
                             <svg aria-hidden="true" class="w-3 h-3 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
@@ -66,14 +75,20 @@
                 </div>
                 <!-- card1-end -->
                 <!-- card2-start -->
-                <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border2 bg-gray-700 shadow">
-                    <a href="./files/page2.html" target="_blank">
-                        <img src="./images/csm.png" class="rounded-t-lg w-80 h-72"  alt="Mob Psycho 100"> 
-                    </a>
+                <div class="relative w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border2 bg-gray-700 shadow-md ">
+                    <div id="imageHover2">
+                        <a href="./files/page2.html" target="_blank">
+                            <div class="hidden absolute w-80 h-72 bg-gray-600 rounded-t-lg opacity-40" id="overlay2"></div>
+                            <img src="./images/csm.png" class="rounded-t-lg w-80 h-72"  alt="Mob Psycho 100"> 
+                        </a>
+                        <div id="link2" class="hidden absolute top-3 right-5 mt-auto border border-white px-3 text-white">
+                            <button>Watch</button>
+                        </div>
+                    </div>
                     <div class="p-5">
                             <h5 class="mb-2 text-xl text-cardText2 font-bold tracking-tight select-none">Chainsaw Man</h5>
-                            <p class="mb-3 text-sm font-normal text-gray-400 select-none">Chainsaw Man (Japanese: チェンソーマン, Hepburn: Chensō Man) is a Japanese manga series written and illustrated by Tatsuki Fujimoto.</p>
-                            <a href="./files/page2.html" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-cardText2 rounded-lg hover:bg-btnHover2 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <p class="mb-3 text-sm font-normal text-gray-300 select-none">Chainsaw Man (Japanese: チェンソーマン, Hepburn: Chensō Man) is a Japanese manga series written and illustrated by Tatsuki Fujimoto.</p>
+                            <a href="./files/page2.html" target="_blank" class="select-none inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-cardText2 rounded-lg hover:bg-btnHover2 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                 Read more
                             <svg aria-hidden="true" class="w-3 h-3 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
@@ -81,14 +96,20 @@
                 </div>
                 <!-- card2-end -->
                 <!-- card3-start -->
-                <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border3 bg-gray-700 shadow">
-                    <a href="./files/page3.html" target="_blank">
-                        <img src="./images/sym.jpg" class="rounded-t-lg w-80 h-72"  alt="Saint Young Men"> 
-                    </a>
+                <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border3 bg-zinc-600 shadow-md">
+                    <div id="imageHover3">
+                        <a href="./files/page3.html" target="_blank">
+                            <div class="hidden absolute w-80 h-72 bg-gray-600 rounded-t-lg opacity-60" id="overlay3"></div>
+                            <img src="./images/sym.jpg" class="rounded-t-lg w-80 h-72"  alt="Saint Young Men"> 
+                        </a>
+                        <div id="link3" class="hidden absolute top-3 right-5 mt-auto border border-white px-3 text-white">
+                            <button>Watch</button>
+                        </div>
+                    </div>
                     <div class="p-5">
                             <h5 class="mb-2 text-xl text-cardText3 font-bold tracking-tight select-none">Saint Young Men</h5>
-                            <p class="mb-3 text-sm font-normal text-gray-400 select-none">Saint Young Men (Japanese: 聖セイント☆おにいさん, Hepburn: Seinto Oniisan) is a Japanese slice of life comedy manga series written by Hikaru Nakamura. </p>
-                            <a href="./files/page2.html" target="_blank" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-cardText3 rounded-lg hover:bg-btnHover3 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            <p class="mb-3 text-sm font-normal text-gray-300 select-none">Saint Young Men (Japanese: 聖セイント☆おにいさん, Hepburn: Seinto Oniisan) is a Japanese slice of life comedy manga series written by Hikaru Nakamura. </p>
+                            <a href="./files/page2.html" target="_blank" class="select-none inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-cardText3 rounded-lg hover:bg-btnHover3 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                 Read more
                             <svg aria-hidden="true" class="w-3 h-3 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
