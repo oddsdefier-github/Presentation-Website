@@ -87,6 +87,7 @@ for (let i = 1; i <= 3; i++) {
     imageHover.addEventListener("mouseout", () => {
       showBtn.classList.add("hidden");
       overlay.classList.add("hidden");
+      imgZoom.classList.remove("hover:scale-125");
     });
   }
   

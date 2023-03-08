@@ -1,0 +1,5 @@
+.card-container {
+    filter: blur(3px);
+    filter: grayscale(100%);
+    pointer-events: none;
+}
