@@ -8,13 +8,19 @@
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
     <link rel="icon" type="image/x-icon" href="../icons/anime-favicon.png">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="js/script.js"></script>
+    <!-- <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> -->
 </head>
-
+    <!-- <style>
+        * {
+        outline: 1px solid red;
+    } -->
+</style>
 <body onload="scrollToTop()" class="font-inter bg-black text-white w-screen overflow-x-hidden">
-    <section class="relative w-screen h-full"> 
+
+    <main data-router-wrapper>
+        <section data-router-view="page1" class="relative w-screen h-full"> 
         
             <!-- content-wrapper-start -->
             <div class="absolute flex flex-row justify-start gap-10 top-12 left-32 mt-7 ml text-white z-50 w-fit h-fit">
@@ -42,7 +48,7 @@
                 <!-- card1-end -->
 
                 <!-- right-content-start -->
-                <div class="w-1/2 ml-10">
+                <div class="w-1/2 ml-10 select-none">
                     <header>
                         <h1 class="text-3xl font-black mb-1">Mob Psycho 100</h1>
                         <h2 class="text-base font-semibold text-gray-300 mb-1"><span class="text-red-400">Theme:</span> Super Power</h2>
@@ -69,7 +75,7 @@
                         </div>
                     </header>
                     <!-- synopsis-start -->
-                    <div class="w-full mt-5 text-left">
+                    <div class="w-full mt-5">
                         <ul class="list-none"> 
                             <li>
                                 Eighth-grader Shigeo "Mob" Kageyama has tapped into his inner wellspring of psychic prowess at a young age. But the power quickly proves to be a liability when he realizes the potential danger in his skills. Choosing to suppress his power, Mob's only present use for his ability is to impress his longtime crush, Tsubomi, who soon grows bored of the same tricks.
@@ -84,7 +90,7 @@
 
                     <div class="mt-5 w-24 flex flex-row">
                         <img src="../icons/arrow-bar-left.svg" alt="arrow-bar-left"> 
-                        <a href="../home.html" onclick="window.close()" class="text-sm text-white hover:text-gray-300">Back</a>
+                        <a href="../home.html" class="text-sm text-white hover:text-gray-300">Back</a>
                     </div>
             
                 </div>
@@ -95,7 +101,6 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 animate-bounce">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                          
                     </a>
 
                  </div>
@@ -106,8 +111,9 @@
             <div class="absolute top-0 left-0 bg-slate-800 bg-opacity-90 w-screen h-full"></div>
             <img src="../images/mp-bg.jpg" alt="Mob-bg" class="w-full max-h-full">
 
-    </section>
-    
+        </section>
+    </main>
+
 
 </body>
 </html>
