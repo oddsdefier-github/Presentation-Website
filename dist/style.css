@@ -1,5 +1,4 @@
 
-
 .card-container {
     filter: grayscale(100%) blur(2px);
     pointer-events: none;
@@ -50,5 +49,4 @@
 		transform: rotate(1deg);
 	}
 }
-
 

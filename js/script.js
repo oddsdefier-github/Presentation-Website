@@ -1,16 +1,11 @@
-// import Highway from '@dogstudio/highway';
-// import Fade from './fade.js';
 
-// const H = new Highway.Core( {
-//     transitions: {
-//         default: Fade
-//     }
-// });
 
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
 
+
+//Make the div grayscale
 const grayscale = document.getElementById("grayscale");
 grayscale.classList.remove("card-container");
 
@@ -18,7 +13,7 @@ const hide = document.getElementById("alert");
 hide.style.display = "none";
 
 
-
+//Pop-up appear
 const alertTimeout = setTimeout(tipAlert, 2500);    
     function tipAlert() {
         var show = document.getElementById("alert")
@@ -33,7 +28,6 @@ const alertTimeout = setTimeout(tipAlert, 2500);
                 hide.style.display = "flex";
             } else {
                 hide.style.display = "none";
-                // hide.classList.add("animate-ping");
             }
             
         }
@@ -64,5 +58,5 @@ for (let i = 1; i <= 3; i++) {
       overlay.classList.add("hidden");
       imgZoom.classList.remove("hover:scale-125");
     });
-  }
+  };
   
