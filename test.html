@@ -1,140 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Anime</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./icons/anime-favicon.png">
-    <link rel="stylesheet" href="dist/style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script defer src="js/script.js"></script>
-</head>
-<body>
-    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="sm:hidden">
-            <label for="tabs" class="sr-only">Select tab</label>
-            <select id="tabs" class="bg-gray-50 border-0 border-b border-gray-200 text-gray-900 text-sm rounded-t-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option>Statistics</option>
-                <option>Services</option>
-                <option>FAQ</option>
-            </select>
-        </div>
-        <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
-            <li class="w-full">
-                <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Statistics</button>
-            </li>
-            <li class="w-full">
-                <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Services</button>
-            </li>
-            <li class="w-full">
-                <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">FAQ</button>
-            </li>
-        </ul>
-        <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
-            <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">73M+</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Developers</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Public repositories</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Open source projects</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">1B+</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Contributors</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">90+</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Top Forbes companies</dd>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <dt class="mb-2 text-3xl font-extrabold">4M+</dt>
-                        <dd class="font-light text-gray-500 dark:text-gray-400">Organizations</dd>
-                    </div>
-                </dl>
+<section class="relative w-screen h-full"> 
+        
+    <!-- content-wrapper-start -->
+    <div class="absolute flex flex-row justify-start gap-10 top-12 left-32 mt-7 ml text-white z-50 w-fit h-fit">
+
+        <!-- card2-start -->
+        <div class="relative w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-csmOrange bg-csmOrange shadow-md ">
+            <div id="imageHover2" class="overflow-hidden">
+                <a href="./files/page2.html" target="_self">
+                    <div class="hidden absolute w-80 h-72 bg-slate-800 rounded-t-lg opacity-40" id="overlay2"></div>
+                    <img src="../images/csm.jpg" class="rounded-t-lg w-80 h-72"  alt="Mob Psycho 100"> 
+                </a>
+                <div id="link2" class="hidden rounded-lg absolute top-3 right-5 mt-auto border border-white px-3 py-1 text-white text-xs hover:text-gray-200 hover:border-gray-200">
+                    <a href="https://animepahe.ru/anime/deb7c59b-2faa-50ea-049e-1a0290a1b50c" target="_self">Watch</a>
+                </div>
             </div>
-            <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
-                <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">We invest in the world’s potential</h2>
-                <!-- List -->
-                <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
-                    <li class="flex space-x-2">
-                        <!-- Icon -->
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="font-light leading-tight">Dynamic reports and dashboards</span>
+            <div class="p-5">
+                    <h5 class="mb-2 text-lg text-gray-700 font-bold tracking-tight select-none">Chainsaw Man</h5>
+                    <p class="mb-3 text-sm font-normal text-gray-700 select-none">Chainsaw Man (Japanese: チェンソーマン, Hepburn: Chensō Man) is a Japanese manga series written and illustrated by Tatsuki Fujimoto.</p>
+                    <a href="./files/page2.html" target="_self" class="select-none inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-btnPurple rounded-lg hover:bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300" >
+                        Read more
+                    <svg aria-hidden="true" class="w-3 h-3 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+            </div>
+        </div>
+        <!-- card2-end -->
+        
+        <!-- right-content-start -->
+        <div class="w-1/2 ml-10 select-none">
+            <header>
+                <h1 class="text-3xl font-black mb-1">Chainsaw Man</h1>
+                <h2 class="text-base font-semibold text-gray-300 mb-1"><span class="text-red-400">Theme:</span> Gore</h2>
+                <div class="text-sm flex flex-row justify-items-start gap-10 mt-2 w-3/5 ">
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                          </svg>                                  
+                          TV Series
+                    </p>
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          24 Mins
+                    </p>
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                          </svg>
+                          Oct 2022
+                    </p>
+                </div>
+            </header>
+            <!-- synopsis-start -->
+            <div class="w-full mt-5 text-left">
+                <ul class="list-none"> 
+                    <li>
+                        Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death, crushing all hope of him ever achieving happiness.                            
                     </li>
-                    <li class="flex space-x-2">
-                        <!-- Icon -->
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="font-light leading-tight">Templates for everyone</span>
-                    </li>
-                    <li class="flex space-x-2">
-                        <!-- Icon -->
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="font-light leading-tight">Development workflow</span>
-                    </li>
-                    <li class="flex space-x-2">
-                        <!-- Icon -->
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <span class="font-light leading-tight">Limitless business automation</span>
+                    <br>
+                    <li>
+                        Remarkably, an old contract allows Pochita to merge with the deceased Denji and bestow devil powers on him, changing him into a hybrid able to transform his body parts into chainsaws. Because Denji's new abilities pose a significant risk to society, the Public Safety Bureau's elite devil hunter Makima takes him in, letting him live as long as he obeys her command. Guided by the promise of a content life alongside an attractive woman, Denji devotes everything and fights with all his might to make his naive dreams a reality.                            
                     </li>
                 </ul>
             </div>
-            <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="faq" role="tabpanel" aria-labelledby="faq-tab">
-                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                    <h2 id="accordion-flush-heading-1">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                        <span>What is Flowbite?</span>
-                        <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                        <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-                        </div>
-                    </div>
-                    <h2 id="accordion-flush-heading-2">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                        <span>Is there a Figma file available?</span>
-                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
-                        </div>
-                    </div>
-                    <h2 id="accordion-flush-heading-3">
-                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                        <span>What are the differences between Flowbite and Tailwind UI?</span>
-                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                        <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
-                            <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-                            <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    </div>
+             <!-- synopsis-end -->
+
+            <div class="mt-5 w-24 flex flex-row">
+                <img src="../icons/arrow-bar-left.svg" alt="arrow-bar-left"> 
+                <a href="../home.html" class="text-sm text-white hover:text-gray-300">Back</a>
+            </div>
+    
+        </div>
+         <!-- right-content-end -->
+
+         <!-- next-btn -->
+         <div class="translate-y-52 ml-8 w-9 h-9" >
+            <a href="./page3.html" target="_self">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 animate-bounce">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+         </div>
+        <!-- next-btn -->
+
+    </div>
+    <!-- content-wrapper-end -->
+
+    <div class="absolute top-0 left-0 bg-slate-800 bg-opacity-70 w-screen h-full"></div>
+    <img src="../images/csm-bg.jpg" alt="Mob-bg" class="w-full max-h-full">
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="relative w-screen h-full"> 
+        
+    <!-- content-wrapper-start -->
+    <div class="absolute flex flex-row justify-start gap-10 top-12 left-32 mt-7 ml text-white z-50 w-fit h-fit">
+
+        <!-- card3-start -->
+        <div class="w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-border2 bg-cardText2 shadow-md">
+            <div id="imageHover3">
+                <a href="./files/page3.html" target="_self">
+                    <div class="hidden absolute w-80 h-72 bg-slate-800 rounded-t-lg opacity-60" id="overlay3"></div>
+                    <img src="../images/sym.jpg" class="rounded-t-lg w-80 h-72"  alt="Saint Young Men">
+                </a>
+                <div id="link3" class="hidden rounded-lg absolute top-3 right-5 mt-auto border border-white px-3 py-1 text-white text-xs hover:text-gray-200 hover:border-gray-200">
+                    <a href="https://animepahe.ru/anime/873578b2-5e5d-19f9-9058-3ebb2beaaa8e" target="_self">Watch</a>
+                </div>
+            </div>
+            <div class="p-5">
+                    <h5 class="mb-2 text-lg text-gray-700 font-bold tracking-tight select-none">Saint Young Men</h5>
+                    <p class="mb-3 text-sm font-normal text-gray-700 select-none">Saint Young Men (Japanese: 聖セイント☆おにいさん, Hepburn: Seinto Oniisan) is a Japanese slice of life comedy manga series written by Hikaru Nakamura. </p>
+                    <a href="./files/page3.html" target="_self" class="select-none inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-btnPurple rounded-lg hover:bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-blue-300" >
+                        Read more
+                    <svg aria-hidden="true" class="w-3 h-3 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
             </div>
         </div>
-    </div>
+        <!-- card3-end -->
+
+        <!-- right-content-start -->
+        <div class="w-1/2 ml-10 select-none">
+            <header>
+                <h1 class="text-3xl font-black mb-1">Saint Young Men</h1>
+                <h2 class="text-base font-semibold text-gray-300 mb-1"><span class="text-red-400">Theme:</span> Comedy</h2>
+                <div class="text-sm flex flex-row justify-items-start gap-10 mt-2 w-3/5 ">
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                          </svg>                                  
+                          OVA
+                    </p>
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          20 Mins
+                    </p>
+                    <p href="" class="flex flex-row justify-center items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                          </svg>
+                          Dec 2012
+                    </p>
+                </div>
+            </header>
+            <!-- synopsis-start -->
+            <div class="w-full mt-5 text-left">
+                <ul class="list-none"> 
+                    <li>
+                        After thousands of years of hard work, Jesus Christ and Gautama Buddha decide that they have earned a vacation and descend from the heavens to rent a small apartment in Tokyo, Japan. As the pair struggles to live incognito, they enjoy the luxuries of modern society, such as amusement parks, and limited-time store sales. Jesus and Buddha take the time to celebrate each other's holidays, watch the changing of the seasons, and explore their new surroundings. Saint☆Oniisan follows the two religious figures as they meet new people and face the everyday challenges that come with living in Tokyo.        
+                    </li>
+                </ul>
+            </div>
+             <!-- synopsis-end -->
+
+            <div class="mt-5 w-24 flex flex-row">
+                <img src="../icons/arrow-bar-left.svg" alt="arrow-bar-left"> 
+                <a href="../home.html" class="text-sm text-white hover:text-gray-300">Back</a>
+            </div>
     
-</body>
-</html>
+        </div>
+         <!-- right-content-end -->
+        <!-- next-btn -->
+         <div class="translate-y-52 ml-8 w-9 h-9" >
+            <a href="./page1.html" target="_self">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 animate-bounce">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+         </div>
+         <!-- next-btn -->
+
+    </div>
+    <!-- content-wrapper-end -->
+
+    <div class="absolute top-0 left-0 bg-slate-800 bg-opacity-80 w-screen h-full"></div>
+    <img src="../images/sym-bg.jpg" alt="Mob-bg" class="w-full max-h-full">
+
+</section>
