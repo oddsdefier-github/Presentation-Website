@@ -43,7 +43,7 @@ hr.remove();
 
 
 
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i <= 4; i++) {
     const showBtn = document.getElementById(`link${i}`);
     const imageHover = document.getElementById(`imageHover${i}`);
     const overlay = document.getElementById(`overlay${i}`);
@@ -56,7 +56,6 @@ for (let i = 1; i <= 3; i++) {
     imageHover.addEventListener("mouseout", () => {
       showBtn.classList.add("hidden");
       overlay.classList.add("hidden");
-      imgZoom.classList.remove("hover:scale-125");
     });
   };
   
