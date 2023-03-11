@@ -1405,6 +1405,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -2617,6 +2622,11 @@ video {
     background-color: rgb(245 181 52 / var(--tw-bg-opacity));
   }
 
+  .lg\:bg-btnPurple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 67 153 / var(--tw-bg-opacity));
+  }
+
   .lg\:p-6 {
     padding: 1.5rem;
   }
@@ -2666,6 +2676,34 @@ video {
     line-height: 1.25rem;
     font-size: 0.875rem;
     letter-spacing: 0.093776456em;
+  }
+
+  .lg\:hover\:translate-y-4:hover {
+    --tw-translate-y: 1rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:hover\:border-0:hover {
+    border-width: 0px;
+  }
+
+  .lg\:hover\:border-t-4:hover {
+    border-top-width: 4px;
+  }
+
+  .lg\:hover\:border-mpGreen:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(202 233 98 / var(--tw-border-opacity));
+  }
+
+  .lg\:hover\:border-border2:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 194 71 / var(--tw-border-opacity));
+  }
+
+  .lg\:hover\:border-csmOrange:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 111 0 / var(--tw-border-opacity));
   }
 }
 
