@@ -985,6 +985,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -1167,6 +1171,10 @@ video {
   width: 5rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-none {
   max-width: none;
 }
@@ -1260,6 +1268,10 @@ video {
   justify-content: center;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-items-start {
   justify-items: start;
 }
@@ -1270,6 +1282,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -1410,6 +1426,11 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -1420,6 +1441,10 @@ video {
 
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
+}
+
+.stroke-red-400 {
+  stroke: #f87171;
 }
 
 .p-1 {
@@ -2249,6 +2274,10 @@ video {
   opacity: 0.75;
 }
 
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
 .focus\:opacity-100:focus {
   opacity: 1;
 }
@@ -2627,6 +2656,11 @@ video {
     background-color: rgb(75 67 153 / var(--tw-bg-opacity));
   }
 
+  .lg\:bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+
   .lg\:p-6 {
     padding: 1.5rem;
   }
@@ -2634,6 +2668,15 @@ video {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
   }
 
   .font-inter .lg\:text-sm,.lg\:text-sm .font-inter {
@@ -2676,6 +2719,48 @@ video {
     line-height: 1.25rem;
     font-size: 0.875rem;
     letter-spacing: 0.093776456em;
+  }
+
+  .font-inter .lg\:text-2xl,.lg\:text-2xl .font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.019492328em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-tighter, .font-inter .lg\:text-2xl.tracking-tighter,.lg\:text-2xl .font-inter .tracking-tighter,.lg\:text-2xl .font-inter.tracking-tighter, .tracking-tighter .font-inter .lg\:text-2xl, .tracking-tighter .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.069492328em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-tight, .font-inter .lg\:text-2xl.tracking-tight,.lg\:text-2xl .font-inter .tracking-tight,.lg\:text-2xl .font-inter.tracking-tight, .tracking-tight .font-inter .lg\:text-2xl, .tracking-tight .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.044492328em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-normal, .font-inter .lg\:text-2xl.tracking-normal,.lg\:text-2xl .font-inter .tracking-normal,.lg\:text-2xl .font-inter.tracking-normal, .tracking-normal .font-inter .lg\:text-2xl, .tracking-normal .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.019492328em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-wide, .font-inter .lg\:text-2xl.tracking-wide,.lg\:text-2xl .font-inter .tracking-wide,.lg\:text-2xl .font-inter.tracking-wide, .tracking-wide .font-inter .lg\:text-2xl, .tracking-wide .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.005507672em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-wider, .font-inter .lg\:text-2xl.tracking-wider,.lg\:text-2xl .font-inter .tracking-wider,.lg\:text-2xl .font-inter.tracking-wider, .tracking-wider .font-inter .lg\:text-2xl, .tracking-wider .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.030507672em;
+  }
+
+  .font-inter .lg\:text-2xl .tracking-widest, .font-inter .lg\:text-2xl.tracking-widest,.lg\:text-2xl .font-inter .tracking-widest,.lg\:text-2xl .font-inter.tracking-widest, .tracking-widest .font-inter .lg\:text-2xl, .tracking-widest .lg\:text-2xl.font-inter {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.080507672em;
   }
 
   .lg\:hover\:translate-y-4:hover {
