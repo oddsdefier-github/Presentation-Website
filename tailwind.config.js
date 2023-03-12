@@ -11,15 +11,8 @@ module.exports = {
       //   inter: "'Inter', sans-serif",
       // },
       colors: {
-        
-        border2: '#FFC247', 
-        border3: '#ff7a60',
-        cardText1: '#5C5885',
-        cardText2: '#F5B534',
-        cardText3: '#ff7b61',
-       
-        btnHover2: '#FDC453',
-        btnHover3: '#F9A998',
+        symYellow: '#FFC247', 
+        symYellow2: '#F5B534',
         bgPage: '#202125',
         mpGreen: '#cae962',
         csmOrange: '#ff6f00',
