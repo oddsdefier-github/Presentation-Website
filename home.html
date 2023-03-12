@@ -23,10 +23,77 @@
         <section class="container flex flex-col w-screen h-screen">
 
                 <!-- header-start -->
-                <header class="border-b border-gray-600 ml-5 lg:mt-5 lg:ml-0 flex flex-col mt-9">
-                    <h1 class="text-3xl lg:text-2xl font-bold text-white select-none">Favorite Anime</h1>
-                    <p class="text-sm lg:text-md text-gray-300 mt-1 mb-2 select-none">Discover my favorite Anime shows of all time.</p>
-                    <hr id="hr">
+                <header class="border-b border-gray-600 lg:mt-5 mt-5 lg:ml-0 lg:w-full w-10/12 mx-auto">
+                    <nav class="flex items-center justify-between">
+                        <!-- nav-left -->
+                        <div class="flex flex-col w-fit">
+                            <h1 class="text-3xl lg:text-2xl font-bold text-white select-none">Favorite Anime</h1>
+                            <p class="text-sm lg:text-md text-gray-300 mt-1 mb-2 select-none">Discover my favorite Anime shows of all time.</p>
+                            <hr id="hr">
+                        </div>
+                        <!-- nav-left -->
+
+                        <!-- nav-right -->
+                        <div class="hidden lg:flex text-white ">
+                              <div class="hidden lg:flex lg:gap-x-12 justify-end">
+                                <div class="relative">
+                                    <button type="button" id="popup" onclick="hideShow()" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white" aria-expanded="false" >
+                                        About
+                                        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                            
+                                    <!-- popup-start -->
+                                    <div class="content absolute -left-80 top-full mr-5 z-10 mt-3 w-screen max-w-sm overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" id="content">
+
+                                         <!-- tab-group -->
+                                        <div class="p-4">
+
+                                            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                                                <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-gray-600 group-hover:text-indigo-600">
+                                                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                                                    </svg>
+                                                                                                     
+                                                </div>
+                                                <div class="flex-auto">
+                                                    <p class="block font-semibold text-gray-900">
+                                                        Who made this website?
+                                                        <span class="absolute inset-0"></span>
+                                                    </p>
+                                                    <p class="mt-1 text-gray-600">Jeffry Paner, an artist and aspiring web developer.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-100">
+                                                <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-gray-600 group-hover:text-indigo-600">
+                                                        <path fill-rule="evenodd" d="M18.97 3.659a2.25 2.25 0 00-3.182 0l-10.94 10.94a3.75 3.75 0 105.304 5.303l7.693-7.693a.75.75 0 011.06 1.06l-7.693 7.693a5.25 5.25 0 11-7.424-7.424l10.939-10.94a3.75 3.75 0 115.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 015.91 15.66l7.81-7.81a.75.75 0 011.061 1.06l-7.81 7.81a.75.75 0 001.054 1.068L18.97 6.84a2.25 2.25 0 000-3.182z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                                <div class="flex-auto">
+                                                    <a href="https://github.com/oddsdefier-github/Presentation-Website/tree/responsive" target="_blank">                                                                                                    
+                                                        <p class="block font-semibold text-gray-900">
+                                                            Github
+                                                            <span class="absolute inset-0"></span>
+                                                        </p>
+                                                        <p class="mt-1 text-gray-600">You can get the source code here</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                         <!-- tab-group -->
+                                        
+                                    </div>
+                                    <!-- popup-end -->
+                                </div>
+                              </div>
+                        </div>
+                         <!-- nav-right -->
+                    </nav>
                 </header>
                 <!-- header-end -->
 
@@ -34,8 +101,8 @@
                 <div class="relative w-full h-fit">
 
                     <!-- floating-alert-start -->
-                    <div class="exit absolute ml-5 z-50 text-xs lg:text-sm text-white select-none w-auto shadow-lg items-center rounded-lg bg-btnPurple py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
-                        <strong class="mr-2 font-semibold">Tip: </strong> <p>You can click the image to know more.</p> 
+                    <div class="exit absolute ml-5 z-50 text-xs lg:text-sm text-gray-600 select-none w-auto shadow-lg items-center rounded-lg bg-white py-3 px-3 data-[te-alert-show]:inline-flex" id="alert" role="alert" data-te-alert-init data-te-alert-show >
+                        <strong class="mr-2 font-semibold text-indigo-600">Tip: </strong> <p>You can click the image to know more.</p> 
                         <button type="button"  onclick="hideAlert(); removeBlur()" class="ml-5 box-content rounded-none border-none p-1 opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-alert-dismiss aria-label="Close">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
@@ -47,7 +114,7 @@
                     <!-- floating-alert-end-->
 
                     <!-- card-container-start -->
-                    <div class="card-container container flex flex-col justify-center items-center gap-10 py-7 lg:flex lg:flex-row lg:justify-center lg:px-5 lg:py-10 lg:gap-10" id="grayscale">
+                    <div class="card-container container flex flex-col justify-center items-center gap-10 py-7 lg:flex lg:flex-row lg:justify-center lg:px-5 lg:pt-5 lg:gap-10" id="grayscale">
 
                         <!-- card1-start -->
                         <div class="relative w-80 h-1/2 max-w-sm rounded-xl transition ease-in-out hover:translate-y-4 hover:border-0 hover:border-t-4 hover:border-mpGreen bg-mpGreen shadow-md">

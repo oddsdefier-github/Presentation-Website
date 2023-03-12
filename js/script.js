@@ -47,6 +47,7 @@ for (let i = 1; i <= 4; i++) {
     const showBtn = document.getElementById(`link${i}`);
     const imageHover = document.getElementById(`imageHover${i}`);
     const overlay = document.getElementById(`overlay${i}`);
+    
   
     imageHover.addEventListener("mouseover", () => {
       showBtn.classList.remove("hidden");
@@ -57,5 +58,21 @@ for (let i = 1; i <= 4; i++) {
       showBtn.classList.add("hidden");
       overlay.classList.add("hidden");
     });
+  };
+
+  function hideShow() {
+    const popup = document.getElementById('popup');
+    const content = document.getElementById('content');
+
+    if (content.classList.contains('show')) {
+        content.classList.remove('show');
+        content.classList.add('hide');
+        setTimeout(() => {
+        content.classList.remove('hide');
+        }, 200);
+    } else {
+        content.classList.add('show');
+    }
+
   };
   
