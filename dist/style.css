@@ -61,7 +61,20 @@
 .exit.show {
 	transform: scale(0);
 	opacity: 0;
-	transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+	transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+	animation: exit 0.3s ease-in 0s 1;
+	
+}
+@keyframes exit {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
 }
 .content {
 	transform: scale(0);
