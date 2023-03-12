@@ -22,15 +22,28 @@ const alertTimeout = setTimeout(tipAlert, 2500);
     }
 
     function hideAlert() {
-        var hide = document.getElementById("alert");
+        // const hide = document.getElementById("alert");
 
-            if (hide.style.display === "none") {
-                hide.style.display = "flex";
-            } else {
-                hide.style.display = "none";
-            }
+        //     if (hide.style.display === "none") {
+        //         hide.style.display = "flex";
+        //     } else {
+        //         hide.style.display = "none";
+        //     }
             
-        }
+        // }
+        const hide = document.getElementById("alert");
+        const remove = document.getElementById("remove");
+        
+        if (hide.classList.contains("show")) {
+            hide.classList.remove("show");
+            hide.classlist.add("hide");
+            setTimeout(() => {
+                hide.classList.remove('hide');
+                }, 200);
+            } else {
+                hide.classList.add('show');
+            }
+    }
 
 function removeBlur() {
     var removeBlur = document.getElementById("grayscale");
