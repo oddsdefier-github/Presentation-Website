@@ -6,3 +6,5 @@
 # *Implemented responsive design especially on mobile version.
 # *It has a live preview that you can see here : https://jeffry-paner.netlify.app/home.html 
 # *Feedbacks are welcome to further improve the project.
+
+# Github repository for this project: https://github.com/oddsdefier-github/Presentation-Website
