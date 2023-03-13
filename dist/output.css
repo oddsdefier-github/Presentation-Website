@@ -799,6 +799,10 @@ video {
   visibility: collapse;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1079,6 +1083,10 @@ video {
 
 .h-5\/6 {
   height: 83.333333%;
+}
+
+.h-\[J\FFFDom\FFFD\1\FFFD\FFFD A\FFFDT9\FFFDP\<\FFFD\FFFD\%\] {
+  height: J�om���A�T9�P<��%;
 }
 
 .max-h-full {
@@ -2272,6 +2280,26 @@ video {
   line-height: 1;
   font-size: 8rem;
   letter-spacing: 0.0777em;
+}
+
+.\[a\:\FFFD\FFFD\E\1A\FFFD\1F\FFFD 9\7F 8\17\15\FFFD\FFFD\] {
+  a: ����98��;
+}
+
+.\[n\:h\FFFD aE\FFFD\FFFD\FFFD\FFFDsP\19\.Js5\1D\FFFD\FFFD\FFFD\/\|X\>\5x\FFFD\FFFD\FFFDN\FFFD\^\FFFD\FFFD\10\FFFD-F\FFFD\%\FFFD fn\FFFD\!F\4FE\FFFDz\FFFD\15\FFFD\FFFD\FFFD\Fg\FFFD\FFFD\FFFD\FFFDi\^\3A6\FFFD\FFFD\FFFD 9\FFFD\FFFDWn\2c \FFFDi\FFFD\8\FFFDHW\] {
+  n: h�aE����sP.Js5���/|X>x���N�^���-F�%�fn�!FӾ�z����g����i^Φ���9��Wn,�i��HW;
+}
+
+.\[rp\:\FFFD\2CAjh\] {
+  rp: �ˊjh;
+}
+
+.\[x1\:\FFFDS\FFFD\FFFD\FFFD EV\FFFD\FFFD\FFFD\16\] {
+  x1: �S���EV���;
+}
+
+.\[z\:\FFFD\@g\1C\FFFDj\FFFD\14pH\FFFD\13\FFFD\FFFD\FFFD\12 6\FFFD d\FFFD\FFFD\BB\?n\@\FFFD\FFFD\|\~3\FFFD\FFFD\7BE\FFFD\6\FFFD\FFFD\19\FFFD E\FFFD\FFFD\FFFD\|\FFFD\11\10\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\~\#\FFFD\FFFD\FFFDG\FFFD\FFFD\19\] {
+  z: �@g�j�pH����6�d��»?n@��|~3��޾����E���|���������~#���G��;
 }
 
 .hover\:translate-y-4:hover {
