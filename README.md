@@ -1,6 +1,5 @@
-# v1 Simple implementation of links and images using HTML 
-# *included bootstrap css using cdn.
-# *This simple program has version 2.0 and you can see it here on : https://github.com/oddsdefier-github/Presentation-Website/tree/responsive
+# Presentation-Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f765abb5-a759-4081-8c5b-e7126a951b3e/deploy-status)](https://app.netlify.com/sites/oddsdefier-anime/deploys)
 
 # v2 Included CSS library - Tailwind CSS 
 # *Successfully implemented some of the design but I messed up on layouts and of some container.
