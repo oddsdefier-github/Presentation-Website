@@ -1,7 +1,6 @@
-
 .card-container {
-    filter: grayscale(100%) blur(2px);
-    pointer-events: none;
+	filter: grayscale(100%) blur(2px);
+	pointer-events: none;
 }
 
 .exit {
@@ -54,7 +53,7 @@
 	}
 }
 
-    /* * {
+/* * {
         outline: 2px solid red;
     } */
 
@@ -63,7 +62,6 @@
 	opacity: 0;
 	transition: transform 0.3s ease-out, opacity 0.2s ease-out;
 	animation: exit 0.3s ease-in 0s 1;
-	
 }
 @keyframes exit {
 	0% {
@@ -79,12 +77,11 @@
 
 .content {
 	transform: scale(0);
-    opacity: 0;
-    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+	opacity: 0;
+	transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .content.show {
 	transform: scale(1);
 	opacity: 1;
 }
-

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/oddsdefier-github/Presentation-Website#readme",
   "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.4",
     "tailwindcss": "^3.2.7",
     "tailwindcss-font-inter": "^3.0.1"
   },
